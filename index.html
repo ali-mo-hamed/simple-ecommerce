@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my Store</title>
+  <!-- css sheet -->
+  <link rel="stylesheet" href="css/mystyle.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  
+  <!-- header -->
+  <header>
+    <div class="container top-nav">
+      <a href="#" class="logo"><img src="img/logo-black.png" alt="logo"></a>
+      <form action="" class="search">
+        <input type="search" placeholder="search for products...">
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="card_header">
+        <div onclick="OpenCart()" class="icon_card">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="card_item">0</span>
+        </div>
+  
+        <div class="tottal_price">
+          <p>My Cart:</p>
+          <p class="price_card_head">$0</p>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="links container">
+        <ul>
+          <li class="active"><a href=""></a>home</li>
+          <li><a href=""></a>all products</li>
+          <li><a href=""></a>about us</li>
+          <li><a href=""></a>contact</li>
+        </ul>
+
+        <div class="loging_signup">
+          <a href="">login <i class="fa-solid fa-right-to-bracket"></i></a>
+          <a href="">sign up <i class="fa-solid fa-user-plus"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- cart -->
+  <div class="cart">
+    <div class="top_cart">
+      <h3>my cart <span>(0item in cart)</span></h3>
+      <span onclick="CloseCart()" class="close_cart"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+
+    <div class="items_in_cart">
+      <div class="item_cart">
+        <img src="img/product/product-1.jpg" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$140</p>
+        </div>
+        <button class="delete_item"><i class="fa-regular fa-trash-can"></i></button>
+      </div>
+
+      <div class="item_cart">
+        <img src="img/product/product-2.jpg" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$140</p>
+        </div>
+        <button class="delete_item"><i class="fa-regular fa-trash-can"></i></button>
+      </div>
+
+      <div class="item_cart">
+        <img src="img/product/product-3.jpg" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$140</p>
+        </div>
+        <button class="delete_item"><i class="fa-regular fa-trash-can"></i></button>
+      </div>
+    </div>
+
+    <div class="bottom_cart">
+      <div class="total">
+        <p>cart sobtotal</p>
+        <p class="price_cart_total">$0</p>
+      </div>
+
+      <div class="button_cart">
+        <a href="#" class="btn_cart">proceed to checkout</a>
+        <button class="btn_cart trans_bg">shop more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- slider -->
+  <section class="slider">
+    <div class="container">
+      <div class="side_bar">
+        <h2><i class="fa-solid fa-bars"></i>Shop by derparment</h2>
+        <a href="#">All Categories</a>
+        <a href="#">Best Seller Products</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Top 10 Offers</a>
+        <a href="#">Phone & Tablet</a>
+        <a href="#">Electronics & Digital</a>
+        <a href="#">Fashion & Clothings</a>
+        <a href="#">Jewelry & Watches</a>
+        <a href="#">TV & Audio</a>
+      </div>
+
+      <!-- Swiper -->
+      <div class="slid_swp mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="img/slider-01.jpg" alt=""></a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#"><img src="img/slider-02.jpg" alt=""></a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#"><img src="img/slider-03.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- features -->
+  <section class="features">
+    <div class="container">
+      <div class="features_item">
+        <img src="img/features1.png" alt="">
+        <div class="features_text">
+          <h4>Free Shipping</h4>
+          <p>Free Shipping on all order</p>
+        </div>
+      </div>
+
+      <div class="features_item">
+        <img src="img/features2.png" alt="">
+        <div class="features_text">
+          <h4>Free Shipping</h4>
+          <p>Free Shipping on all order</p>
+        </div>
+      </div>
+
+      <div class="features_item">
+        <img src="img/features3.png" alt="">
+        <div class="features_text">
+          <h4>Free Shipping</h4>
+          <p>Free Shipping on all order</p>
+        </div>
+      </div>
+
+      <div class="features_item">
+        <img src="img/features4.png" alt="">
+        <div class="features_text">
+          <h4>Free Shipping</h4>
+          <p>Free Shipping on all order</p>
+        </div>
+      </div>
+
+      <div class="features_item">
+        <img src="img/features5.png" alt="">
+        <div class="features_text">
+          <h4>Free Shipping</h4>
+          <p>Free Shipping on all order</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullests: true,
+        clickable: true
+      },
+      autoplay:{
+        delay:2500,
+      },
+      loop:true,
+    });
+  </script>
+</body>
+</html>
